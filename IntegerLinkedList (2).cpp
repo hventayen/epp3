@@ -3,7 +3,20 @@
 #include "IntegerLinkedList.h"
 
 // int IntegerLinkedList::count(int compare) // COMPLETE THIS FOR PROBLEM 2
-
+int IntegerLinkedList::count(int compare)
+{
+  Node *currentNode = head;
+  int count = 0;
+  while (currentNode != nullptr)
+  {
+    if(currentNode->elem == compare)
+    {
+      count++;
+    }
+    currentNode = currentNode->next;
+  }
+  return count;
+}
 int IntegerLinkedList::countRecurse (SNode *ptr, int compare) {
   // COMPLETE THIS FOR PROBLEM 3
 }
