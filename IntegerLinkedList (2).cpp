@@ -5,7 +5,7 @@
 // int IntegerLinkedList::count(int compare) // COMPLETE THIS FOR PROBLEM 2
 int IntegerLinkedList::count(int compare)
 {
-  Node *currentNode = head;
+  SNode *currentNode = head;
   int count = 0;
   while (currentNode != nullptr)
   {
